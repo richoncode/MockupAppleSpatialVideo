@@ -4,7 +4,8 @@
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -17,7 +18,7 @@
                BlueprintIdentifier = "29F406A22BCDA08700353DBA"
                BuildableName = "ARKitRoomTracking.app"
                BlueprintName = "ARKitRoomTracking"
-               ReferencedContainer = "container:ARKitRoomTracking.xcodeproj">
+               ReferencedContainer = "container:MockupAppleSpatialDisplay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,12 +27,11 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "29F406A22BCDA08700353DBA"
             BuildableName = "ARKitRoomTracking.app"
             BlueprintName = "ARKitRoomTracking"
-            ReferencedContainer = "container:ARKitRoomTracking.xcodeproj">
+            ReferencedContainer = "container:MockupAppleSpatialDisplay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "29F406A22BCDA08700353DBA"
             BuildableName = "ARKitRoomTracking.app"
             BlueprintName = "ARKitRoomTracking"
-            ReferencedContainer = "container:ARKitRoomTracking.xcodeproj">
+            ReferencedContainer = "container:MockupAppleSpatialDisplay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

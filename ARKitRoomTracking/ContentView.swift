@@ -7,6 +7,18 @@ The main view for the app's window.
 import SwiftUI
 import RealityKit
 
+
+struct FadeInHoverEffect: CustomHoverEffect {
+    func body(content: Content) -> some CustomHoverEffect {
+        content.hoverEffect { effect, isActive, proxy in
+            effect.animation(.easeOut) {
+               print("hover: ", isActive)
+                return $0.opacity(isActive ? 1 : 0.5)
+            }
+        }
+    }
+}
+
 /// The interface of the app.
 ///
 /// This view opens the immersive space and starts room tracking.
@@ -57,6 +69,13 @@ struct ContentView: View {
         VStack {
             Spacer()
             Text("Enter the immersive space to start room tracking.")
+           Button("Gaze Button", action: {
+               print("Button gazed upon")
+           })
+           .hoverEffect(FadeInHoverEffect())
+           .focusable()
+
+           
             Spacer()
             Button("Enter immersive space") {
                 Task {
